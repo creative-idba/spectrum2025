@@ -19,7 +19,6 @@
   position: relative;
 }
 
-/* overlay gelap transparan biar teks lebih jelas */
 .sec_container::before {
   content: "";
   position: absolute;
@@ -53,18 +52,16 @@ h1 {
   border: 1px solid #ddd;
   outline: none;
 }
-/* Hilangkan panah pada input number (Chrome, Safari, Edge) */
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Hilangkan panah pada input number (Firefox) */
 input[type=number] {
   -moz-appearance: textfield;
 }
-
 
 #display {
   font-size: 5em;
