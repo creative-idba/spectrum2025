@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPECTRUM 10.0</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="sec_container">
+    <h1>SPECTRUM 10.0</h1>
+
+    <div class="content_inputs">
+      <input type="number" id="hours" min="0" placeholder="Jam">
+      <input type="number" id="minutes" min="0" max="59" placeholder="Menit">
+      <input type="number" id="seconds" min="0" max="59" placeholder="Detik">
+      <button id="set">Set</button>
+    </div>
+
+    <div id="display">00:00:00</div>
+      <div class="content_button">
+      <button id="start" onclick="openFullscreen()">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset" onclick="closeFullscreen()">Reset</button>
+    </div>
+    <div class="content_tim">
+      <div class="content_tim1">
+        <input type="text">
+      </div>
+      <div class="content_tim2">
+        <input type="text">
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="JS/script.js"></script>
+</body>
+</html>

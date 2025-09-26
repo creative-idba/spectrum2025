@@ -66,6 +66,7 @@ function openFullscreen() {
   }
 }
 
+
 const contentInputs = document.querySelector(".content_inputs");
 document.addEventListener("fullscreenchange", () => {
   if (document.fullscreenElement) {
