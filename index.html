@@ -5,31 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SPECTRUM 10.0</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
   <section class="sec_container">
+    <div class="logo">
+      <img class="logo_undip" src="img/logoundip.png" alt="UNDIP">
+      <img class="logo_hmtli" src="img/HMTLI.png" alt="HMTLI">
+      <img class="logo_decibel" src="img/logo decibel.png" alt="DECIBEL">
+      <img class="spektrum" src="img/spektrum.png" alt="DECIBEL">
+    </div>
+
     <h1>SPECTRUM 10.0</h1>
-    <h3>LINEFOLLOWER</h3>
+    <h3 class="h3i">LINEFOLLOWER</h3>
+    <h5 class="h5i">FINAL</h5>
+    <h4 class="h4 d-none">PREPARATION & BRIEFING</h4>
 
     <!-- Display utama bisa diklik untuk ubah waktu -->
-    <div id="display" class="digital-clock">00:00:00</div>
+    <div id="display" class="timer digital-clock">00:00:00</div>
 
     <div class="content_tim">
       <div class="content_tim1">
-        <input type="text" placeholder="Tim 1">
+        <input type="text" placeholder="Tim Biru">
       </div>
-      <h2>VS</h2>
+      <img class="vs" src="img/vs.png" alt="">
       <div class="content_tim2">
-        <input type="text" placeholder="Tim 2">
+        <input type="text" placeholder="Tim Merah">
       </div>
     </div>
 
-    <div class="content_button">
-      <button id="start" onclick="openFullscreen()">Start</button>
+    <div class="content_tim content_tim_start d-none">
+      <div class="content_tim_start1">
+        <input type="text" placeholder="Tim Biru">
+      </div>
+      <img class="vs" src="img/vs.png" alt="">
+      <div class="content_tim_start2">
+        <input type="text" placeholder="Tim Merah">
+      </div>
+    </div>
+
+    <div class="content_button d-none">
+      <button id="start">Start</button>
       <button id="pause">Pause</button>
-      <button id="reset" onclick="closeFullscreen()">Reset</button>
+      <button id="reset">Reset</button>
     </div>
   </section>
+  <!-- Audio "keepalive" -->
+<audio id="keepalive-audio" loop preload="none" style="display: none;">
+  <source src="data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV" type="audio/mpeg">
+</audio>
 
   <script src="JS/script.js"></script>
 </body>
